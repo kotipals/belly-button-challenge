@@ -72,8 +72,14 @@ function sample_chart(x){
     
     
     var bubble_layout = {
-      title: 'Bubble Chart',
-      showlegend: false,
+      title: {
+        text: 'Bubble Chart',
+      showlegend: false
+      }, xaxis: {
+        title: {
+          text: 'OTU ID',
+          }
+      },
     };
     
     Plotly.newPlot('bubble', bubble_data, bubble_layout);
